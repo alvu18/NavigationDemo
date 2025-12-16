@@ -1,5 +1,4 @@
 package com.example.navigationdemo.screens
-
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -25,8 +24,7 @@ fun Profile(onClearBackStack: () -> Unit) {
                 style = MaterialTheme.typography.headlineSmall
             )
             Spacer(modifier = Modifier.size(30.dp))
-            Button(onClick = {
-                onClearBackStack()
+            Button(onClick = {onClearBackStack()
             }) {
                 Text(text = "Go Home")
             }

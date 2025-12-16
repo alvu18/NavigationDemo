@@ -1,5 +1,4 @@
 package com.example.navigationdemo.screens
-
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -22,7 +21,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation3.runtime.NavKey
 import com.example.navigationdemo.WelcomeScreen
-
 @Composable
 fun Home(onNavigation: (NavKey) -> Unit) {
     var userName by remember { mutableStateOf("") }
@@ -41,8 +39,7 @@ fun Home(onNavigation: (NavKey) -> Unit) {
                 onTextChange = onTextChange
             )
             Spacer(modifier = Modifier.size(30.dp))
-            Button(onClick = {
-                onNavigation(WelcomeScreen(userName))
+            Button(onClick = { onNavigation(WelcomeScreen(userName))
             }) {
                 Text(text = "Register")
             }

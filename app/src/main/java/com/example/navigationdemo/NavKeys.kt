@@ -1,5 +1,4 @@
 package com.example.navigationdemo
-
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 @Serializable
